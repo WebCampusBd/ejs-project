@@ -1,0 +1,17 @@
+<%- include("layouts/header") %>
+    <main>
+        <form action="/register" method="post">
+            <input type="text" name="pLanguage" id="name" placeholder="Programming Language" required>
+            <input type="submit" value="Save" id="btn">
+        </form>
+        <ul>
+            <% if(pLanguages.length > 0){ %>
+                <% for(let i = 0; i < pLanguages.length; i++){ %>
+                    <li><%= pLanguages[i] %></li>
+                <% } %>
+            <% }else{ %>
+                <p>Not Found Data</p>
+            <% } %>
+        </ul>
+    </main>
+<%- include("layouts/footer") %>
