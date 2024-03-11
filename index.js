@@ -16,7 +16,7 @@ let pLanguages = [];
 
 app.get("/", (req,res)=>{
     res.statusCode = 200;
-    res.render("home.ejs", {pLanguages});
+    res.render("home", {pLanguages});
     
 });
 
