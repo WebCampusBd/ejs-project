@@ -1,8 +1,11 @@
 const express = require("express");
 const ejs = require("ejs");
+const path = require("path");
 const app = express();
 
 app.set("view engine", "ejs");
+app.set("views", path.resolve("./views"));
+app.set("public", path.resolve("./public"));
 app.use(express.static("public"));
 app.use(express.urlencoded({extended : false}));
 
