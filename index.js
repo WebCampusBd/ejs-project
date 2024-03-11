@@ -13,7 +13,7 @@ let pLanguages = [];
 
 app.get("/", (req,res)=>{
     res.statusCode = 200;
-    res.render("home", {pLanguages});
+    res.send("welcome");
 });
 
 app.post("/register", (req,res)=>{
