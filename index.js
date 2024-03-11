@@ -36,6 +36,7 @@ app.use((err,req,res,next)=>{
     res.statusCode = 500;
     res.send({
         message : "Something Broke!",
+        msg : err.message,
         error : err
     })
 });
