@@ -9,7 +9,7 @@
     "defaultEngine": "ejs",
     "ext": ".ejs",
     "name": "home",
-    "root": "/var/task/views"
+    "root": "/views"
     },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
