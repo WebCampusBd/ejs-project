@@ -11,9 +11,13 @@ app.use(express.urlencoded({extended : false}));
 
 let pLanguages = [];
 
+  //Failed to lookup view \"home\" in views directory \"/var/task/views\"//
+
+
 app.get("/", (req,res)=>{
     res.statusCode = 200;
-    res.send("welcome");
+    res.render("home.ejs", {pLanguages});
+    
 });
 
 app.post("/register", (req,res)=>{
