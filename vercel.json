@@ -11,5 +11,11 @@
         "src": "/(.*)",
         "dest": "/"
       }
-    ]
+    ],
+    "view": {
+      "defaultEngine": "ejs",
+      "ext": ".ejs",
+      "name": "home",
+      "root": "/var/task/views"
+      }
   }
