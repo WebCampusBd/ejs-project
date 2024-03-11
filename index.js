@@ -1,11 +1,13 @@
 require("dotenv").config();
 const express = require("express");
 const ejs = require("ejs");
+const path = require("path");
 const app = express();
 const port = process.env.PORT || 5000;
 
 
 app.set("view engine", "ejs");
+app.set("views", path.resolve("./views"));
 app.use(express.static("public"));
 app.use(express.urlencoded({extended : false}));
 
