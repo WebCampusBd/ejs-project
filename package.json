@@ -9,8 +9,11 @@
     "defaultEngine": "ejs",
     "ext": ".ejs",
     "name": "home",
-    "root": "/views"
+    "root": "/var/task/views"
     },
+    "defaultEngine": "ejs",
+    "ext": ".ejs",
+    "root": "/var/task/views",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
